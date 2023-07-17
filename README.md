@@ -19,7 +19,7 @@ Meking a pokedex using pokeapi more information in https://pokeapi.co/
 
 ## How use:
 
-####1 Install cocoa pods
+#### 1 Install cocoa pods
 
 if your computer has apple m1 processor open the terminal with Rosseta
 
@@ -29,7 +29,7 @@ open the Terminal
 ![My Image](images/paso1.png)
 sudo gem uninstall cocoapods
 
-####2 Move to location project in terminal and install pods
+#### 2 Move to location project in terminal and install pods
 
 ![My Image](images/paso1.3.png)
 
@@ -39,7 +39,7 @@ pod install
 ![My Image](images/paso2.png)
 
 
-####3 open project with xcode
+#### 3 open project with xcode
 double click on the pokedex file with the extension .xcworkspace
 
 ![My Image](images/paso2.1.png)
