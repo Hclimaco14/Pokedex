@@ -50,9 +50,6 @@ cd user/yourLocationProject/Pokedex
  <img alt="Dark" src="images/paso2.png" width="45%">
 </p>
 
-<p align="center">
- <img alt="Light" src="images/paso2.png" width="60%">
-</p>
 
 #### 3 open project with xcode
 double click on the pokedex file with the extension .xcworkspace
