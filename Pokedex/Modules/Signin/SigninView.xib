@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninViewController">
+            <connections>
+                <outlet property="logoImageView" destination="K8h-qh-9jP" id="h0M-d8-EoB"/>
+                <outlet property="passwordTextField" destination="A2p-1a-AWi" id="CXR-XQ-zJG"/>
+                <outlet property="signInButton" destination="fkc-vw-YQr" id="XPJ-rd-zNW"/>
+                <outlet property="signInButtonGoogle" destination="Big-qS-yhf" id="dCf-8P-oFW"/>
+                <outlet property="userTextField" destination="Sdf-19-Arp" id="NMi-Ri-Ba1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PokeTest" translatesAutoresizingMaskIntoConstraints="NO" id="K8h-qh-9jP">
+                    <rect key="frame" x="107" y="144" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="ptD-Yq-NXy"/>
+                        <constraint firstAttribute="width" constant="200" id="v0S-zf-Xs3"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-jK-cci">
+                    <rect key="frame" x="32" y="392" width="350" height="112"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-19-Arp">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="u6r-ty-CAU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-1a-AWi">
+                            <rect key="frame" x="0.0" y="64" width="350" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="C0M-zY-KhJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkc-vw-YQr">
+                    <rect key="frame" x="32" y="536" width="350" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="B4S-XZ-SqX"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sing In">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Big-qS-yhf" customClass="GIDSignInButton">
+                    <rect key="frame" x="32" y="608" width="350" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="hVu-IS-c7H"/>
+                    </constraints>
+                    <connections>
+                        <action selector="signInSender:" destination="-1" eventType="touchUpInside" id="NaF-Vw-lkT"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fkc-vw-YQr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="1AY-Yr-uYk"/>
+                <constraint firstItem="fkc-vw-YQr" firstAttribute="top" secondItem="hvf-jK-cci" secondAttribute="bottom" constant="32" id="2dL-n9-GyF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hvf-jK-cci" secondAttribute="trailing" constant="32" id="6Tj-pe-AFP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Big-qS-yhf" secondAttribute="trailing" constant="32" id="JNN-C7-Etw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fkc-vw-YQr" secondAttribute="trailing" constant="32" id="LBY-Jh-jVF"/>
+                <constraint firstItem="K8h-qh-9jP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NuU-27-3pQ"/>
+                <constraint firstItem="hvf-jK-cci" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="ScM-bh-iqt"/>
+                <constraint firstItem="Big-qS-yhf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="TlK-iO-Rdu"/>
+                <constraint firstItem="hvf-jK-cci" firstAttribute="top" secondItem="K8h-qh-9jP" secondAttribute="bottom" constant="48" id="U4H-ge-wDx"/>
+                <constraint firstItem="hvf-jK-cci" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="b3h-r9-3sg"/>
+                <constraint firstItem="Big-qS-yhf" firstAttribute="top" secondItem="fkc-vw-YQr" secondAttribute="bottom" constant="24" id="kU7-PV-dOm"/>
+            </constraints>
+            <point key="canvasLocation" x="-771" y="10"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PokeTest" width="543" height="265.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
