@@ -23,32 +23,45 @@ Meking a pokedex using pokeapi more information in https://pokeapi.co/
 
 if your computer has apple m1 processor open the terminal with Rosseta
 
-![My Image](images/paso1.1.png) ![My Image](images/paso1.2.png)
+<p align="center">
+<img alt="Light" src="images/paso1.png" width="60%">
+<img alt="Light" src="images/paso1.png" width="60%">
+</p>
 
 open the Terminal 
-![My Image](images/paso1.png)
-sudo gem uninstall cocoapods
+
+<p align="center">
+<img alt="Light" src="images/paso1.png" width="60%">
+</p>
+
+`sudo gem uninstall cocoapods`
 
 #### 2 Move to location project in terminal and install pods
-
-![My Image](images/paso1.3.png)
-
+<p align="center">
+<img alt="Light" src="images/paso1.3.png" width="60%">
+</p>
 cd user/yourLocationProject/Pokedex
-pod install
 
-![My Image](images/paso2.png)
+`pod install`
 
+<p align="center">
+ <img alt="Light" src="images/paso2.png" width="60%">
+</p>
 
 #### 3 open project with xcode
 double click on the pokedex file with the extension .xcworkspace
 
-![My Image](images/paso2.1.png)
+<p align="center">
+<img alt="Light" src="images/paso2.1.png" width="60%">
+</p>
 
-####4 select the project and choose the simulator
+#### 4 select the project and choose the simulator
 
-![My Image](images/paso3.png)
+<p align="center">
+<img alt="Light" src="images/paso3.png" width="60%">
 
-![My Image](images/paso3.1.png)
+<img alt="Light" src="images/paso3.1.png" width="60%">
+</p>
 
 
 ### application screemshots
