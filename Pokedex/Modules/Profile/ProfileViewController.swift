@@ -72,9 +72,8 @@ class ProfileViewController: UIViewController {
             self.memberSinceLabel.attributedText = timeStr.toNSAttributedString(attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17), NSAttributedString.Key.foregroundColor: Coulors.white])
         }
         
-        self.logoutButton.setTitle("Logout", for: .normal)
-        self.logoutButton.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
-        self.logoutButton.tintColor = Coulors.white
+        self.logoutButton.titleLabel?.attributedText = "Logout".toNSAttributedString(attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17), NSAttributedString.Key.foregroundColor : Coulors.white])
+        
         self.logoutButton.corner(10)
         self.logoutButton.backgroundColor = Coulors.yellow
         

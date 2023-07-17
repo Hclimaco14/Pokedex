@@ -72,7 +72,7 @@ class SigninViewController: UIViewController {
         
         self.signInButtonGoogle.corner(10)
         
-        signInButton.titleLabel?.attributedText = "SignIn".toNSAttributedString(attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17),])
+        signInButton.titleLabel?.attributedText = "SignIn".toNSAttributedString(attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17), NSAttributedString.Key.foregroundColor : Coulors.white])
         
         signInButton.backgroundColor = Coulors.yellow
         
