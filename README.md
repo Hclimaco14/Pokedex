@@ -50,6 +50,9 @@ cd user/yourLocationProject/Pokedex
  <img alt="Dark" src="images/paso2.png" width="45%">
 </p>
 
+<p align="center">
+ <img alt="Light" src="images/paso2.png" width="60%">
+</p>
 
 #### 3 open project with xcode
 double click on the pokedex file with the extension .xcworkspace
@@ -59,7 +62,7 @@ double click on the pokedex file with the extension .xcworkspace
 </p>
 
 
-####4 select the project and choose the simulator
+#### 4 select the project and choose the simulator
 
 <p align="center">
   <img alt="Light" src="images/paso3.png" width="45%">
